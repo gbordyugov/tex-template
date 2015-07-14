@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+\usepackage[cm]{fullpage}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\newcommand{\dd}{\text{d}}
+\newcommand{\ii}{\text{i}}
+
+\newcommand{\of}[1]{\left( {#1} \right)}
+\newcommand{\fracd}[2]{\frac{\dd{}{#1}}{\dd{}{#2}}}
+
+\newcommand{\dhref}[1]{\href{#1}{#1}}
+\newcommand{\mailhref}[1]{\href{mailto:#1}{#1}}
+
+\title{A title}
+\author{G Bordyugov \mailhref{gregbg@gmail.com}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+  None provided
+\end{abstract}
+
+\tableofcontents
+
+\section{Introduction}
+my first paper \cite{Anishchenko2000}
+\[
+\fracd{x}{t} = f\of{x}
+\]
+
+\section{Main results}
+\section{Conclusions}
+
+\bibliographystyle{vancouver}
+\bibliography{template}
+\end{document}
